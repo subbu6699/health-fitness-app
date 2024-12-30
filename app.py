@@ -46,9 +46,9 @@ st.markdown(
         text-align: center;
         margin-bottom: 1.5rem;
     }
-    .feature i {
-        font-size: 2rem;
-        color: #2563EB;
+    .feature img {
+        width: 100%;
+        border-radius: 10px;
         margin-bottom: 1rem;
     }
     .feature h3 {
@@ -119,50 +119,38 @@ st.markdown(
 # Features Section
 st.markdown("## Key Features")
 col1, col2, col3, col4 = st.columns(4)
+
+# Feature 1: Activity Tracking
 with col1:
-    st.markdown(
-        """
-        <div class="feature">
-            <i class="fas fa-running"></i>
-            <h3>Activity Tracking</h3>
-            <p>Monitor your steps, calories burned, and more.</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    st.markdown('<div class="feature">', unsafe_allow_html=True)
+    st.image("https://via.placeholder.com/300x200.png?text=Activity+Tracking", use_column_width=True)
+    st.markdown("<h3>Activity Tracking</h3>", unsafe_allow_html=True)
+    st.markdown("<p>Monitor your steps, calories burned, and more.</p>", unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+# Feature 2: Diet & Nutrition
 with col2:
-    st.markdown(
-        """
-        <div class="feature">
-            <i class="fas fa-utensils"></i>
-            <h3>Diet & Nutrition</h3>
-            <p>Log your meals and track your nutrient intake.</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    st.markdown('<div class="feature">', unsafe_allow_html=True)
+    st.image("https://via.placeholder.com/300x200.png?text=Diet+%26+Nutrition", use_column_width=True)
+    st.markdown("<h3>Diet & Nutrition</h3>", unsafe_allow_html=True)
+    st.markdown("<p>Log your meals and track your nutrient intake.</p>", unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+# Feature 3: Mental Health
 with col3:
-    st.markdown(
-        """
-        <div class="feature">
-            <i class="fas fa-brain"></i>
-            <h3>Mental Health</h3>
-            <p>Access meditation guides and stress management tools.</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    st.markdown('<div class="feature">', unsafe_allow_html=True)
+    st.image("https://via.placeholder.com/300x200.png?text=Mental+Health", use_column_width=True)
+    st.markdown("<h3>Mental Health</h3>", unsafe_allow_html=True)
+    st.markdown("<p>Access meditation guides and stress management tools.</p>", unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+# Feature 4: Sleep Analysis
 with col4:
-    st.markdown(
-        """
-        <div class="feature">
-            <i class="fas fa-bed"></i>
-            <h3>Sleep Analysis</h3>
-            <p>Track your sleep patterns and improve sleep quality.</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    st.markdown('<div class="feature">', unsafe_allow_html=True)
+    st.image("https://via.placeholder.com/300x200.png?text=Sleep+Analysis", use_column_width=True)
+    st.markdown("<h3>Sleep Analysis</h3>", unsafe_allow_html=True)
+    st.markdown("<p>Track your sleep patterns and improve sleep quality.</p>", unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 # Login Section
 st.markdown("## Login to Your Account")
