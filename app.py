@@ -174,14 +174,23 @@ with st.form("login_form"):
             <input type="email" id="email" name="email" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-            <p style="text-align: center; margin-top: 1rem;">
-                <a href="#forgot-password" style="color: #2563EB;">Forgot Password?</a>
-            </p>
-            <p style="text-align: center;">
-                Don't have an account? <a href="#signup" style="color: #2563EB;">Sign Up</a>
-            </p>
         </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    # Submit Button
+    submit_button = st.form_submit_button("Login")
+    if submit_button:
+        st.success("Logged in successfully!")  # Placeholder for login logic
+
+    st.markdown(
+        """
+        <p style="text-align: center; margin-top: 1rem;">
+            <a href="#forgot-password" style="color: #2563EB;">Forgot Password?</a>
+        </p>
+        <p style="text-align: center;">
+            Don't have an account? <a href="#signup" style="color: #2563EB;">Sign Up</a>
+        </p>
         """,
         unsafe_allow_html=True,
     )
